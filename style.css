@@ -4,4 +4,53 @@
   border: none;
   outline: none;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Plus Jakarta Sans";
+  font-size: 0.875rem;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+.mark-all-as-read {
+  color: #5e6778;
+}
+
+.display-name {
+  font-weight: 800;
+  color: #1c202b;
+  margin-right: 0.25em;
+}
+
+.post-name {
+  font-weight: 800;
+  color: #5e6778;
+}
+
+.notification {
+  color: #5e6778;
+}
+.notification-age {
+  color: #939cad;
+}
+
+.group-name {
+  color: #0a327b;
+  font-weight: 800;
+}
+
+.mark-all-as-read:hover,
+.display-name:hover,
+.post-name:hover,
+.group-name:hover {
+  color: #0a327b;
+}
+
+.private-message:hover {
+  cursor: pointer;
+  background-color: #e5effa;
 }
