@@ -82,6 +82,7 @@ h1 {
 
 .notification-age {
   color: #939cad;
+  margin-top: 0.125em;
 }
 
 .display-name {
@@ -121,4 +122,35 @@ h1 {
 .private-message:hover {
   cursor: pointer;
   background-color: #e5effa;
+}
+
+@media (min-width: 650px) {
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafd;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .notification img {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+
+  .container {
+    max-width: 730px;
+    background-color: white;
+    padding: 2em 2em 0;
+    border-radius: 0.75em;
+  }
+
+  .post-image {
+    margin-left: auto;
+  }
 }
