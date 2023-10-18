@@ -7,17 +7,81 @@
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   font-family: "Plus Jakarta Sans";
   font-size: 0.875rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
   font-size: 1.25rem;
 }
 
+.notification-count {
+  font-size: 1rem;
+  background-color: #0a327b;
+  color: white;
+  padding: 0.25em 0.75em;
+  margin-left: 0.25em;
+  border-radius: 0.5em;
+}
+
 .mark-all-as-read {
   color: #5e6778;
+}
+
+.notifications {
+  margin-top: 1.5em;
+}
+
+.notification {
+  color: #5e6778;
+  margin-bottom: 0.75em;
+  display: flex;
+  padding: 1em;
+  border-radius: 0.5rem;
+}
+
+.notification.unread {
+  background-color: #f7fafd;
+}
+
+.notification-mark {
+  background-color: #f65552;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  border-radius: 100%;
+  margin-left: 0.25em;
+  margin-bottom: 0.05em;
+}
+
+.notification img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.avatar {
+  margin-right: 0.75em;
+}
+
+.notification-age {
+  color: #939cad;
 }
 
 .display-name {
@@ -31,11 +95,8 @@ h1 {
   color: #5e6778;
 }
 
-.notification {
-  color: #5e6778;
-}
-.notification-age {
-  color: #939cad;
+.post-image {
+  margin-left: 1em;
 }
 
 .group-name {
@@ -48,6 +109,13 @@ h1 {
 .post-name:hover,
 .group-name:hover {
   color: #0a327b;
+}
+
+.private-message {
+  border: 1px solid #dde7ee;
+  border-radius: 0.5rem;
+  padding: 1em 1.25em;
+  margin-top: 1em;
 }
 
 .private-message:hover {
